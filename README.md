@@ -1,10 +1,10 @@
-# @company/awesome-cli
+# @ideascoladmin/awesome-cli
 
 This is a simple CLI !
 
 ## Installation
 ```
-npm install -g @company/awesome-cli
+npm install -g @ideascoladmin/awesome-cli
 ```
 
 ## Usage as cli
@@ -18,7 +18,7 @@ awesome-cli greet --name=John
 ## Usage as library
 
 ```ts
-import { Greet } from '@company/awesome-cli';
+import { Greet } from '@ideascoladmin/awesome-cli';
 
 Greet('John'); // should print 'Hello, John!'
 

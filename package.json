@@ -1,5 +1,5 @@
 {
-  "name": "@company/awesome-cli",
+  "name": "@ideascoladmin/awesome-cli",
   "version": "0.0.1",
   "description": "This is a simple CLI !",
   "main": "dist/index.js",
