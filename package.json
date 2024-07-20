@@ -1,0 +1,37 @@
+{
+  "name": "@company/awesome-cli",
+  "version": "0.0.1",
+  "description": "This is a simple CLI !",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "npm run build:test && node dist/tests/index.test.js",
+    "build": "tsc",
+    "build:test": "tsc -p tsconfig.test.json",
+    "prepublishOnly": "npm run build",
+    "start": "npm run build && node ./dist/cli.js"
+  },
+  "keywords": [],
+  "author": "JAF <jairo@mail.com>",
+  "license": "MIT",
+  "bin": {
+    "awesome-cli": "dist/bin/cli.js"
+  },
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "!src/tests/**/*"
+  ],
+  "engines": {
+    "node": ">=20.15.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.11",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@ideascol/cli-maker": "^1.5.11"
+  }
+}
