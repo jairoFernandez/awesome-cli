@@ -1,1 +1,1 @@
-export { Greet } from './lib';
+export { Greet, Bye } from './lib';
